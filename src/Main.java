@@ -33,14 +33,6 @@ public class Main {
         }
     }
 
-    private static void generateOwnException() {
-        try {
-            throw new OwnException("OwnException");
-        } catch (OwnException e) {
-            System.out.println(e.print());
-        }
-    }
-
     private static void generateFirstException() {
         try {
             throw new Exception("My first exception");
@@ -48,6 +40,14 @@ public class Main {
             System.out.println(e.getMessage());
         } finally {
             System.out.println("I am here");
+        }
+    }
+
+    private static void generateOwnException() {
+        try {
+            throw new OwnException("OwnException");
+        } catch (OwnException e) {
+            System.out.println(e.print());
         }
     }
 
